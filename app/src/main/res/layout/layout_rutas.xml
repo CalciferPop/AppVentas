@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="15dp">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imageViewRutas"
+                android:layout_width="120dp"
+                android:layout_height="118dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="11dp"
+                android:padding="4dp"
+                android:src="@drawable/ruta"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                />
+
+
+            <TextView
+                android:id="@+id/txtDesRuta"
+                android:layout_width="108dp"
+                android:layout_height="117dp"
+                android:layout_alignTop="@+id/imageViewRutas"
+                android:layout_toEndOf="@+id/imageViewRutas"
+                android:text="DEscripcion"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/btnUpdateRuta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/btnDeleteRutas"
+                android:layout_alignTop="@+id/imageViewRutas"
+                app:backgroundTint="@color/green"
+                app:fabSize="mini"
+                app:srcCompat="@android:drawable/ic_menu_edit" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/btnDeleteRutas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageViewRutas"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="37dp"
+                app:backgroundTint="@android:color/holo_red_dark"
+                app:fabSize="mini"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

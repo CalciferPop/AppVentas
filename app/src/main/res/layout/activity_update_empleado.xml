@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hugopc.appventas.UpdateEmpleadoActivity"
+    android:background="#fcfcfc">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme3"
+        >
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/colappsingtoolbar"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll"
+            app:contentScrim="?attr/colorAccent"
+            app:title="@string/actuaEmplea"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleMarginEnd="64dp"
+            android:background="@drawable/bacccmaterialblue">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarid"
+                app:popupTheme="@style/Base.ThemeOverlay.AppCompat.Light"
+                app:layout_collapseMode="pin"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"/>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgUpdate"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:src="@drawable/ic_edit_empleado"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/dsnUPDID_empleado"
+                android:layout_below="@+id/imgUpdate"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                >
+                <EditText
+                    android:id="@+id/edtUPDID_empleado"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Id_empleado"
+                    android:inputType="text"
+                    android:textColorHint="@color/blue_leve"
+                    android:enabled="false"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/dsnUPDNombreEmpl"
+                android:layout_below="@+id/dsnUPDID_empleado"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                >
+                <EditText
+                    android:id="@+id/edtUPDNombreEmpl"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Nombre Empleado"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/blue_leve"
+                     />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/dsnUPDApellidoPat"
+                android:layout_below="@+id/dsnUPDNombreEmpl"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                >
+                <EditText
+                    android:id="@+id/edtUPDApellidoPat"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Apellido Paterno"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/blue_leve"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/dsnUPDApellidoMatEmpl"
+                android:layout_below="@+id/dsnUPDApellidoPat"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                >
+                <EditText
+                    android:id="@+id/edtUPDApellidoMatEmpl"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Apellido Materno"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/blue_leve"
+                     />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/dsnUPDFechaEmp"
+                android:layout_below="@+id/dsnUPDApellidoMatEmpl"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                >
+                <EditText
+                    android:id="@+id/edtUPDFechaEmp"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Obtener Fecha (1 Click para obtener)"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/blue_leve"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/dsnUPDemailEmp"
+                android:layout_below="@+id/dsnUPDFechaEmp"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                >
+                <EditText
+                    android:id="@+id/edtUPDemailEmp"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/blue_leve"
+                     />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/dsnUPDtelefonoEmp"
+                android:layout_below="@+id/dsnUPDemailEmp"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                >
+                <EditText
+                    android:id="@+id/edtUPDtelefonoEmp"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Telefono"
+                    android:textAlignment="center"
+                    android:inputType="phone"
+                    android:textColorHint="@color/blue_leve"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/dsnUPDRFCEmpleado"
+                android:layout_below="@+id/dsnUPDtelefonoEmp"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                >
+
+                <EditText
+                    android:id="@+id/edtUPDRFCEmpleado"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="RFC"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:textColorHint="@color/blue_leve"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <RadioGroup
+                android:id="@+id/rg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/dsnUPDRFCEmpleado"
+                android:padding="15dp"
+                android:layout_centerHorizontal="true"
+                >
+                <RadioButton
+                    android:id="@+id/rb_UPDmasculino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Masculino"
+                    android:paddingRight="10dp"
+                    android:layout_marginRight="10dp"
+                    />
+                <RadioButton
+                    android:id="@+id/rb_UPDfemenino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Femenino"
+                    android:paddingRight="10dp"
+                    />
+
+            </RadioGroup>
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnUpdateEmp"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/rg"
+                android:layout_centerHorizontal="true"
+                android:theme="@style/MyButtonEmpleado"
+                android:text="Actualizar Datos"
+                />
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

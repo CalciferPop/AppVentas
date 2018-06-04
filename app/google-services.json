@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "28103468786",
+    "firebase_url": "https://appventasnotifications.firebaseio.com",
+    "project_id": "appventasnotifications",
+    "storage_bucket": "appventasnotifications.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:28103468786:android:f362d869ac7775aa",
+        "android_client_info": {
+          "package_name": "com.example.hugopc.appventas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "28103468786-9dor9dqt81uucsr61jk757od4rcfouag.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "28103468786-9dor9dqt81uucsr61jk757od4rcfouag.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8aCK56aRNkngJEITgtiM5wZ-EKs7Zelw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

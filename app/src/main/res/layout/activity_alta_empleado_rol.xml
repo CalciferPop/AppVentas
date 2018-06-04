@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hugopc.appventas.AltaEmpleadoRolActivity"
+    android:background="#fcfcfc">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:theme="@style/AppThemeUsuario"
+        >
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/colappsingtoolbar"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll"
+            app:contentScrim="?attr/colorAccent"
+            app:title="@string/AltaEmpleadoRol"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleMarginEnd="64dp"
+            android:background="@drawable/baccmaterialusuario">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarid"
+                app:popupTheme="@style/Base.ThemeOverlay.AppCompat.Light"
+                app:layout_collapseMode="pin"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"/>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp"
+            >
+
+            <ImageView
+                android:id="@+id/imgEmpleados"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:src="@drawable/empleado2"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:contentDescription="@string/AltaEmpleados" />
+
+
+            <TextView
+                android:id="@+id/txtPrueba"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="@string/listaEmpl"
+                android:textStyle="italic"
+                android:textSize="25sp"
+                android:layout_centerHorizontal="true"
+                android:textColor="#020202"
+                android:layout_below="@id/imgEmpleados"
+                android:layout_marginTop="20dp"
+                />
+            <Spinner
+                android:id="@+id/spinnerEmpleados"
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:layout_below="@id/txtPrueba"
+                android:layout_centerHorizontal="true"
+                >
+            </Spinner>
+
+            <ImageView
+                android:id="@+id/imgRoles"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:src="@drawable/genero"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:layout_below="@id/spinnerEmpleados"
+                android:contentDescription="@string/altaRutaClie" />
+
+
+            <TextView
+                android:id="@+id/txtPrueba2"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="@string/listaRoles"
+                android:textStyle="italic"
+                android:textSize="25sp"
+                android:layout_centerHorizontal="true"
+                android:textColor="#020202"
+                android:layout_below="@id/imgRoles"
+                android:layout_marginTop="20dp"
+                />
+            <Spinner
+                android:id="@+id/spinnerRoles"
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:layout_below="@id/txtPrueba2"
+                android:layout_centerHorizontal="true"
+                >
+            </Spinner>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnAltaEmpleadoRol"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_below="@+id/spinnerRoles"
+                android:layout_centerHorizontal="true"
+                android:theme="@style/MyButtonEmpleado"
+                android:text="@string/dar_de_alta"
+                />
+        </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

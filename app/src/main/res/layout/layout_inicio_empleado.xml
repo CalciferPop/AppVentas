@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hugopc.appventas.InicioActivity"
+    android:background="#fcfcfc">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme2"
+        >
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/colappsingtoolbar"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll"
+            app:contentScrim="?attr/colorPrimary"
+            app:title="@string/dashboard"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleMarginEnd="64dp"
+            android:background="@drawable/baccmaterial_inicio">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarid"
+                app:popupTheme="@style/AppTheme2"
+                app:layout_collapseMode="pin"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"/>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/backgroundcolor"
+            android:orientation="vertical"
+            android:padding="10dp"
+            tools:context=".InicioActivity"
+            android:layout_marginTop="25dp"
+            >
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/cardPedidos"
+                    android:layout_width="340dp"
+                    android:layout_height="150dp"
+                    android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:background="@drawable/cerclebackgroundyello"
+                            android:src="@drawable/ic_shopping_cart_black_24dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/Pedido"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_margin="10dp"
+                            android:background="@color/lightgray" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="@string/CRUDPedido"
+                            android:textColor="@color/darkergray" />
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hugopc.appventas.UpdateProductoActivity"
+    android:background="#fcfcfc">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme4"
+        >
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/colappsingtoolbar"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll"
+            app:contentScrim="?attr/colorPrimary"
+            app:title="@string/actuaProducto"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleMarginEnd="64dp"
+            android:background="@drawable/baccmaterialgreen">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarid"
+                app:popupTheme="@style/Base.ThemeOverlay.AppCompat.Light"
+                app:layout_collapseMode="pin"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"/>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp">
+
+            <ImageView
+                android:id="@+id/imgaltaProd"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:src="@drawable/edit_prod"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="21dp" />
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/dsnUPDIDProd"
+                android:layout_below="@+id/imgaltaProd"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                >
+                <EditText
+                    android:id="@+id/edtUPDidProd"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="ID Producto"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:enabled="false"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/dsnUPDNombreProd"
+                android:layout_below="@+id/dsnUPDIDProd"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                >
+                <EditText
+                    android:id="@+id/edtUPDNombreProd"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Nombre Producto"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/dsnUPDDescProd"
+                android:layout_below="@+id/dsnUPDNombreProd"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                >
+                <EditText
+                    android:id="@+id/edtUPDDescProd"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Descripcion"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/dsnUPDPrecio"
+                android:layout_below="@+id/dsnUPDDescProd"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                >
+                <EditText
+                    android:id="@+id/edtUPDPrecio"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Precio"
+                    android:inputType="numberDecimal"
+                    android:textAlignment="center"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/dsnUPDNumExistencia"
+                android:layout_below="@+id/dsnUPDPrecio"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                >
+
+                <EditText
+                    android:id="@+id/edtUPDNumExistencia"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Existencia"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnUPDProd"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/dsnUPDNumExistencia"
+                android:layout_centerHorizontal="true"
+                android:theme="@style/MyButtonProducto"
+                android:text="@string/actuaProducto"
+                />
+        </RelativeLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

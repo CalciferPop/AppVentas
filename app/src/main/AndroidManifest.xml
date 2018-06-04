@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hugopc.appventas">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo_app"
+        android:label="@string/app_ventas"
+        android:roundIcon="@mipmap/ic_logo_app"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service android:name=".FCMService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+        <service android:name=".FCMTokenService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <activity
+            android:name=".InicioActivity"
+            android:label="@string/dashboard" />
+        <activity
+            android:name=".empleado_alta"
+            android:label="@string/altaEmpl" />
+        <activity
+            android:name=".EmpleadoActivity"
+            android:label="@string/Empleado" />
+        <activity
+            android:name=".listEmpleado"
+            android:label="@string/listaEmpl" />
+        <activity
+            android:name=".Productoactivity"
+            android:label="@string/Producto" />
+        <activity
+            android:name=".producto_alta"
+            android:label="@string/altaProd" />
+        <activity
+            android:name=".ClienteActivity"
+            android:label="@string/Cliente" />
+        <activity
+            android:name=".cliente_alta"
+            android:label="@string/altaClie" />
+        <activity android:name=".GeneroActivity" />
+        <activity android:name=".UsuarioActivity" />
+        <activity android:name=".PedidoActivity" />
+        <activity android:name=".RolActivity" />
+        <activity android:name=".ListaProductosActivity" />
+        <activity android:name=".ListaClientesActivity" />
+        <activity android:name=".RutaActivity" />
+        <activity android:name=".AltaRolActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".ListaRolesActivity" />
+        <activity android:name=".ListaRutasActivity" />
+        <activity android:name=".AltaRutaActivity" />
+        <activity android:name=".ListaGenerosActivity" />
+        <activity android:name=".ListaUsuariosActivity" />
+        <activity android:name=".UpdateClienteActivity" />
+        <activity android:name=".UpdateEmpleadoActivity" />
+        <activity android:name=".UpdateProductoActivity" />
+        <activity android:name=".UpdateRolActivity" />
+        <activity android:name=".UpdateRutaActivity" />
+        <activity android:name=".UpdateGeneroActivity" />
+        <activity android:name=".GeneroAltaActivity" />
+        <activity android:name=".RutaClienteActivity" />
+        <activity android:name=".AltaRutaClienteActivity" />
+        <activity android:name=".ListaRutasClientesActivity" />
+        <activity android:name=".UpdateRutasClientesActivity" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapasRutasClientesActivity"
+            android:label="@string/title_activity_mapas_rutas_clientes" />
+        <activity android:name=".RegistroActivity" />
+        <activity android:name=".AcercaDeActivity" />
+        <activity android:name=".EmpleadosRolesActivity" />
+        <activity android:name=".AltaEmpleadoRolActivity" />
+        <activity android:name=".ListaEmpleadoRolActivity" />
+        <activity android:name=".UpdateEmpleadosRolesActivity" />
+        <activity android:name=".AltaPedidoActivity" />
+        <activity android:name=".ListaPedidosActivity" />
+        <activity android:name=".ListaPedidosPorClienteActivity" />
+        <activity android:name=".UpdatePedidoActivity" />
+    </application>
+
+</manifest>

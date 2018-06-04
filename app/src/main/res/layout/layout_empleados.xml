@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="5dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:padding="8dp"
+
+            >
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="120dp"
+                android:layout_height="118dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:padding="4dp"
+                android:src="@drawable/cliente" />
+
+            <TextView
+                android:id="@+id/txtNombEmpl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/txtApePat"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="163dp"
+                android:text="Nombre"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/txtApePat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/txtApeMat"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="165dp"
+                android:text="Apellido paterno"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/txtApeMat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/txtNombEmpl"
+                android:layout_centerVertical="true"
+                android:text="Apellido materno"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+            <TextView
+                android:id="@+id/txtTelEmpl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/txtNombEmpl"
+                android:layout_centerVertical="true"
+                android:text="Telefono"
+                android:layout_below="@+id/txtApeMat"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+            <TextView
+                android:id="@+id/txtEmailEmpl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/txtNombEmpl"
+                android:layout_centerVertical="true"
+                android:text="Email"
+                android:layout_below="@+id/txtTelEmpl"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/btnUpdateEmpleado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/imageView"
+                android:layout_marginEnd="12dp"
+                app:backgroundTint="@android:color/holo_blue_light"
+                app:fabSize="mini"
+                app:srcCompat="@android:drawable/ic_menu_edit" />
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/btnDeleteEmpleado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView"
+
+
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="12dp"
+                app:backgroundTint="@android:color/holo_red_dark"
+                app:fabSize="mini"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

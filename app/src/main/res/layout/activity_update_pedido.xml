@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hugopc.appventas.UpdatePedidoActivity"
+    android:background="#fcfcfc">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme"
+        >
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/colappsingtoolbar"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll"
+            app:contentScrim="?attr/colorAccent"
+            app:title="@string/actuaPedido"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleMarginEnd="64dp"
+            android:background="@drawable/baccmaterialpedido">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarid"
+                app:popupTheme="@style/Base.ThemeOverlay.AppCompat.Light"
+                app:layout_collapseMode="pin"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"/>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp">
+
+            <ImageView
+                android:id="@+id/imgEditPedi"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:src="@drawable/edit_pedido24dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="21dp" />
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/dsnUPDIDPed"
+                android:layout_below="@+id/imgEditPedi"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                >
+                <EditText
+                    android:id="@+id/edtUPDidPedido"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="ID Pedido"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:enabled="false"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/dsnUPDCantidad"
+                android:layout_below="@+id/dsnUPDIDPed"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                >
+                <EditText
+                    android:id="@+id/edtUPDCantidadPedido"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Cantidad"
+                    android:inputType="number"
+                    android:textAlignment="center"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Spinner
+                android:id="@+id/spinnerProductos"
+                android:layout_width="270sp"
+                android:layout_height="35sp"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/dsnUPDCantidad"
+
+                >
+                
+            </Spinner>
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnUPDPedido"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/spinnerProductos"
+                android:layout_centerHorizontal="true"
+               android:background="@color/yello"
+                android:text="@string/actuaPedido"
+                
+                />
+        </RelativeLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

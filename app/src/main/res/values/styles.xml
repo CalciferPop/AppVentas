@@ -1,0 +1,135 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+
+    <style name="AppThemeLogin" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primaryDash</item>
+        <item name="colorPrimaryDark">@color/primaryDashDark</item>
+        <item name="colorAccent">@color/primaryDash</item>
+    </style>
+
+
+    <style name="AppTheme3" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/bluedark</item>
+        <item name="colorAccent">@color/blue</item>
+    </style>
+
+    <style name="AppTheme4" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryDark">@color/greendark</item>
+        <item name="colorAccent">@color/green</item>
+    </style>
+
+    <style name="AppThemeGenero" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primaryGenero</item>
+        <item name="colorPrimaryDark">@color/primaryGeneroDark</item>
+        <item name="colorAccent">@color/primaryGenero</item>
+    </style>
+
+    <style name="AppThemeCliente" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primaryCliente</item>
+        <item name="colorPrimaryDark">@color/primaryClienteDark</item>
+        <item name="colorAccent">@color/primaryCliente</item>
+    </style>
+
+    <style name="AppThemeUsuario" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primaryUsuario</item>
+        <item name="colorPrimaryDark">@color/primaryUsuarioDark</item>
+        <item name="colorAccent">@color/primaryUsuario</item>
+    </style>
+
+
+    <style name="AppThemeMapa" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primaryUsuario</item>
+        <item name="colorPrimaryDark">@color/primaryUsuarioDark</item>
+        <item name="colorAccent">@color/primaryUsuario</item>
+    </style>
+
+
+    <style name="AppThemeRuta" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primaryRuta</item>
+        <item name="colorPrimaryDark">@color/primaryRutaDark</item>
+        <item name="colorAccent">@color/primaryRuta</item>
+    </style>
+
+    <style name="AppThemeRol" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primaryRol</item>
+        <item name="colorPrimaryDark">@color/primaryRolDark</item>
+        <item name="colorAccent">@color/primaryRol</item>
+    </style>
+
+
+    <style name="MyButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/colorPrimaryLiht</item>
+        <item name="colorButtonNormal">@color/colorPrimary</item>
+    </style>
+
+    <style name="MyButtonUpdate" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/darkergray</item>
+        <item name="colorButtonNormal">@color/deeppurple</item>
+    </style>
+
+    <style name="MyButtonDelete" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/darkergray</item>
+        <item name="colorButtonNormal">@color/warning</item>
+    </style>
+
+    <style name="MyButtonPosicion" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="colorButtonNormal">@color/colorAccent</item>
+    </style>
+
+    <style name="MyButtonEmpleado" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/blue</item>
+        <item name="colorButtonNormal">@color/bluedark</item>
+    </style>
+
+    <style name="MyButtonProducto" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/green</item>
+        <item name="colorButtonNormal">@color/greendark</item>
+    </style>
+
+    <style name="MyButtonRol" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/primaryRol</item>
+        <item name="colorButtonNormal">@color/primaryRolDark</item>
+    </style>
+
+    <style name="MyButtonRuta" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/primaryRuta</item>
+        <item name="colorButtonNormal">@color/primaryRutaDark</item>
+    </style>
+
+    <style name="MyButtonGenero" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/primaryGenero</item>
+        <item name="colorButtonNormal">@color/primaryGeneroDark</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

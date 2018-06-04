@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hugopc.appventas.cliente_alta"
+    android:background="#fcfcfc">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:theme="@style/AppThemeCliente"
+        >
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/colappsingtoolbar"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll"
+            app:contentScrim="?attr/colorAccent"
+            app:title="@string/altaClie"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleMarginEnd="64dp"
+            android:background="@drawable/baccmaterialpink">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarid"
+                app:popupTheme="@style/AppThemeCliente"
+                app:layout_collapseMode="pin"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"/>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgaltaCliente"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:src="@drawable/cliente"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/imgaltaCliente"
+                android:id="@+id/dsnNombreCli"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                >
+                <EditText
+                    android:id="@+id/edtNombreClie"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Nombre Cliente"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                     />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/dsnApePatCli"
+                android:layout_below="@+id/dsnNombreCli"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                >
+                <EditText
+                    android:id="@+id/edtApellidoPatCli"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Apellido Paterno"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                     />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/dsnApeMatCli"
+                android:layout_below="@+id/dsnApePatCli"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                >
+                <EditText
+                    android:id="@+id/edtApellidoMatCli"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Apellido Materno"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:layout_below="@+id/edtApellidoPatCli"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/dsnFecNacCli"
+                android:layout_below="@+id/dsnApeMatCli"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                >
+                <EditText
+                    android:id="@+id/edtFechaNacCli"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Obtener Fecha (2 Click para Obtener)"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                     />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/dsnDomiCli"
+                android:layout_below="@+id/dsnFecNacCli"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                >
+                <EditText
+                    android:id="@+id/edtDomicilioCli"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Domicilio"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:enabled="false"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/dsnTelCli"
+                android:layout_below="@+id/dsnDomiCli"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                >
+                <EditText
+                    android:id="@+id/edttelefonoCli"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Telefono"
+                    android:textAlignment="center"
+                    android:inputType="phone"
+                    />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/dsnEmailCli"
+                android:layout_below="@+id/dsnTelCli"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                >
+                <EditText
+                    android:id="@+id/edtemailCli"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:textAlignment="center"
+                     />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/dsnLATCli"
+                android:layout_below="@+id/dsnEmailCli"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                >
+                <EditText
+                    android:id="@+id/edtLatitud"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Latitud"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:enabled="false"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/dsnLongCli"
+                android:layout_below="@+id/dsnLATCli"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                >
+                <EditText
+                    android:id="@+id/edtLongitud"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Longitud"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:enabled="false"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnGetPosicion"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/dsnLongCli"
+                android:layout_centerHorizontal="true"
+
+                android:theme="@style/MyButtonPosicion"
+                android:text="Obtener Posicion"
+                />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnAltaCli"
+                android:layout_width="150dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/btnGetPosicion"
+                android:layout_centerHorizontal="true"
+                android:theme="@style/MyButtonPosicion"
+                android:text="Dar de alta"
+                />
+        </RelativeLayout>
+
+
+
+
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

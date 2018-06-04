@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hugopc.appventas.UpdateRutaActivity"
+    android:background="#fcfcfc">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:theme="@style/AppThemeRuta"
+        >
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/colappsingtoolbar"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll"
+            app:contentScrim="?attr/colorAccent"
+            app:title="@string/actuaRuta"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleMarginEnd="64dp"
+            android:background="@drawable/baccmaterialrutas">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarid"
+                app:popupTheme="@style/AppThemeRuta"
+                app:layout_collapseMode="pin"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"/>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgaltaRuta"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:src="@drawable/ic_edit_ruta_24dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/dsnUPDIDRuta"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/imgaltaRuta"
+                >
+                <EditText
+                    android:id="@+id/edtUPDIDRuta"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="ID Ruta"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:enabled="false"/>
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/dsnUPDDescRuta"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/dsnUPDIDRuta"
+                >
+                <EditText
+                    android:id="@+id/edtUPDDescRuta"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Desc Ruta"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnUPDRuta"
+                android:layout_width="150dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/dsnUPDDescRuta"
+                android:layout_centerHorizontal="true"
+                android:theme="@style/MyButtonRuta"
+                android:text="@string/actuaRuta"
+                android:textColor="#fff"
+                />
+        </RelativeLayout>
+
+        
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

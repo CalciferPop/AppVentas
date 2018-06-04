@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hugopc.appventas.UpdateGeneroActivity"
+    android:background="#fcfcfc">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:theme="@style/AppThemeGenero"
+        >
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/colappsingtoolbar"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll"
+            app:contentScrim="?attr/colorAccent"
+            app:title="@string/ActuaGenero"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleMarginEnd="64dp"
+            android:background="@drawable/baccmaterialgenero">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarid"
+                app:popupTheme="@style/Base.ThemeOverlay.AppCompat.Light"
+                app:layout_collapseMode="pin"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"/>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgUpdaGenero"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:src="@drawable/ic_edit_genero_24dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/imgUpdaGenero"
+                android:id="@+id/dsnUPDIDGen"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                >
+                <EditText
+                    android:id="@+id/edtUPDidGenero"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="ID Genero"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/dsnUPDIDGen"
+                android:id="@+id/dsnNombreGen"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                >
+                <EditText
+                    android:id="@+id/edtUPDDescGenero"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Nombre Genero"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnUPDGenero"
+                android:layout_width="150dp"
+                android:layout_height="55dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/dsnNombreGen"
+                android:layout_centerHorizontal="true"
+                android:theme="@style/MyButtonGenero"
+                android:text="@string/ActuaGenero"
+                />
+        </RelativeLayout>
+
+
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

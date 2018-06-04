@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginTop="15dp">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/imageViewRutas"
+                android:layout_width="120dp"
+                android:layout_height="118dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="11dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:padding="4dp"
+                android:src="@drawable/rutacliente" />
+
+
+            <TextView
+                android:id="@+id/txtIdRutaStactic"
+                android:layout_width="56dp"
+                android:layout_height="wrap_content"
+
+                android:layout_alignTop="@+id/imageViewRutas"
+                android:layout_toEndOf="@+id/imageViewRutas"
+                android:text="ID Ruta:"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/green" />
+
+
+            <TextView
+                android:id="@+id/txtIdRuta"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageViewRutas"
+                android:layout_toEndOf="@+id/txtIdRutaStactic"
+                android:text="ID Ruta"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/txtDescRutaStatic"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtIdRuta"
+                android:layout_toEndOf="@+id/imageViewRutas"
+                android:text="Nombre Ruta :"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/green" />
+
+            <TextView
+                android:id="@+id/txtDescRuta"
+                android:layout_width="221dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtIdRutaStactic"
+                android:layout_toEndOf="@+id/txtDescRutaStatic"
+                android:text="Nombre Ruta :"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/txtIDClienteStatic"
+                android:layout_width="77dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtDescRutaStatic"
+                android:layout_toEndOf="@+id/imageViewRutas"
+                android:text="ID Cliente :"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/txtIDCliente"
+                android:layout_width="77dp"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/txtDescRutaStatic"
+                android:layout_toEndOf="@+id/txtIDClienteStatic"
+                android:text="ID Cliente :"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/txtNombreClienteStatic"
+                android:layout_width="114dp"
+                android:layout_height="wrap_content"
+
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/imageViewRutas"
+                android:text="Nombre Cliente :"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/txtNombreCliente"
+                android:layout_width="219dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/txtNombreClienteStatic"
+                android:text="Nombre Cliente :"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/txtLatitudStatic"
+                android:layout_width="59dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/btnDeleteRutasClientes"
+                android:layout_toEndOf="@+id/imageViewRutas"
+                android:text="Latitud:"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@android:color/holo_blue_light" />
+
+            <TextView
+                android:id="@+id/txtLatitud"
+                android:layout_width="248dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/btnDeleteRutasClientes"
+                android:layout_toEndOf="@+id/txtIDClienteStatic"
+                android:text="Latitud:"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/txtLongitud"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageViewRutas"
+                android:layout_toEndOf="@+id/txtIDClienteStatic"
+                android:text="Longitud:"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/txtLongitudStatic"
+                android:layout_width="73dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageViewRutas"
+                android:layout_toEndOf="@+id/imageViewRutas"
+                android:text="Longitud:"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@android:color/holo_blue_bright" />
+
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/btnMarcaPosicionCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/btnDeleteRutasClientes"
+                android:layout_centerVertical="true"
+                app:backgroundTint="@color/blue_leve"
+                app:fabSize="mini"
+                app:srcCompat="@android:drawable/ic_menu_mylocation" />
+
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/btnUpdateRutaClients"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/btnDeleteRutasClientes"
+                app:backgroundTint="@color/green"
+                app:fabSize="mini"
+                app:srcCompat="@android:drawable/ic_menu_edit" />
+
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/btnDeleteRutasClientes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="45dp"
+                app:backgroundTint="@android:color/holo_red_dark"
+                app:fabSize="mini"
+                app:srcCompat="@android:drawable/ic_menu_delete" />
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

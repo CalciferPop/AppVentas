@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hugopc.appventas.UpdateEmpleadosRolesActivity"
+    android:background="#fcfcfc">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:theme="@style/AppThemeUsuario"
+        >
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/colappsingtoolbar"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll"
+            app:contentScrim="?attr/colorAccent"
+            app:title="@string/actuaEmpleadoRol"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleMarginEnd="64dp"
+            android:background="@drawable/baccmaterialusuario">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarid"
+                app:popupTheme="@style/Base.ThemeOverlay.AppCompat.Light"
+                app:layout_collapseMode="pin"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"/>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgDatEmpleados"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:src="@drawable/empleado2"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp" />
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/dsnIdEmpleadoAnterior"
+                android:layout_below="@+id/imgDatEmpleados"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                >
+
+                <EditText
+                    android:id="@+id/edtIdEmpleadoAnterior"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Empleado Anterior"
+                    android:inputType="text"
+                    android:enabled="false"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/txtListaEmpl"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="@string/listaEmpl"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/dsnIdEmpleadoAnterior"
+                android:layout_marginTop="15dp"
+                />
+
+            <Spinner
+                android:id="@+id/spinnerEmpleados"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/txtListaEmpl"
+                android:layout_marginTop="15dp"
+                >
+
+            </Spinner>
+
+            <ImageView
+                android:id="@+id/imgDatRoles"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:src="@drawable/genero"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:layout_below="@id/spinnerEmpleados"
+
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/dsnIdRolAnterior"
+                android:layout_below="@+id/imgDatRoles"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                >
+
+                <EditText
+                    android:id="@+id/edtIdRolAnterior"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Rol anterior"
+                    android:inputType="text"
+                    android:enabled="false"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/txtListaRoles"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="@string/listaRoles"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/dsnIdRolAnterior"
+                android:layout_marginTop="15dp"
+                />
+
+
+            <Spinner
+                android:id="@+id/spinnerRoles"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/txtListaRoles"
+                android:layout_marginTop="15dp">
+
+            </Spinner>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnUPDEmpleadosRoles"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="45dp"
+                android:layout_below="@+id/spinnerRoles"
+                android:layout_centerHorizontal="true"
+                android:theme="@style/MyButtonEmpleado"
+                android:text="Actualizar"
+                />
+        </RelativeLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

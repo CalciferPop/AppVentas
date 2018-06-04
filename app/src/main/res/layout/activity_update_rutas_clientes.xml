@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hugopc.appventas.UpdateRutasClientesActivity"
+    android:background="#fcfcfc">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:theme="@style/AppThemeCliente"
+        >
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/colappsingtoolbar"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll"
+            app:contentScrim="?attr/colorAccent"
+            app:title="@string/actuaRutasClientes"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleMarginEnd="64dp"
+            android:background="@drawable/baccmaterialpink">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarid"
+                app:popupTheme="@style/AppThemeCliente"
+                app:layout_collapseMode="pin"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"/>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgDatRutas"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:src="@drawable/ruta"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp" />
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/dsnIdRutaAnterior"
+                android:layout_below="@+id/imgDatRutas"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                >
+
+                <EditText
+                    android:id="@+id/edtIdRutaAnterior"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Ruta Anterior"
+                    android:inputType="text"
+                    android:enabled="false"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/txtpa"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="@string/listaRutas"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:textAlignment="center"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/dsnIdRutaAnterior"
+                android:layout_marginTop="15dp"
+                />
+
+            <Spinner
+                android:id="@+id/spinnerRutas3"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/txtpa"
+                android:layout_marginTop="15dp"
+                >
+
+            </Spinner>
+
+            <ImageView
+                android:id="@+id/imgDatClientes"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:src="@drawable/cliente"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:layout_below="@id/spinnerRutas3"
+
+                />
+
+
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/dsnIdClienteAnterior"
+            android:layout_below="@+id/imgDatClientes"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            >
+
+            <EditText
+                android:id="@+id/edtIdClienteAnterior"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="Id cliente anterior"
+                android:inputType="text"
+                android:enabled="false"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/txtpb"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="@string/listaClientes"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/dsnIdClienteAnterior"
+            android:layout_marginTop="15dp"
+            />
+
+
+        <Spinner
+            android:id="@+id/spinnerClientes2"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txtpb"
+            android:layout_marginTop="15dp">
+
+        </Spinner>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btnUPDRutaClientes"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/spinnerClientes2"
+            android:layout_centerHorizontal="true"
+            android:theme="@style/MyButtonEmpleado"
+            android:text="Actualizar"
+            />
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>

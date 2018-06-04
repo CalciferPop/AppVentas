@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFC107</color>
+    <color name="colorPrimaryDark">#FFA000</color>
+    <color name="backgroundcolor">#fcfcfc</color>
+    <color name="lightgray">#ededed</color>
+    <color name="darkergray">#a6a3a3</color>
+    <color name="deeppurple">#7c4dff</color>
+    <color name="yello">#ffb300</color>
+    <color name="green">#00bfa5</color>
+    <color name="greendark">#037666</color>
+    <color name="blue">#189fe7</color>
+    <color name="bluedark">#065f8f</color>
+    <color name="orange">#e26410</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="black">#050505</color>
+
+    <color name="warning">#df2128</color>
+    <color name="success">#79ed76</color>
+
+    <color name="colorPrimaryLiht">#4ef5d9</color>
+
+    <color name="posicionLiht">#6495ef</color>
+    <color name="posicionDark">#115ae1</color>
+
+    <color name="primaryDash">#a19e9e</color>
+    <color name="primaryDashDark">#787676</color>
+
+    <color name="primaryUsuario"> #5E35B1</color>
+    <color name="primaryUsuarioDark">#311B92</color>
+
+    <color name="primaryGenero"> #90A4AE</color>
+    <color name="primaryGeneroDark">#546E7A</color>
+
+    <color name="primaryRol">#393a3b</color>
+    <color name="primaryRolDark">#2b2b2b</color>
+
+    <color name="primaryCliente">#f5abc4</color>
+    <color name="primaryClienteDark">#FF4081</color>
+
+    <color name="primaryRuta">#A1887F</color>
+    <color name="primaryRutaDark">#5D4037</color>
+
+    <color name="SplashColor">#B0BEC5</color>
+    <color name="SplashColorDark">#FFEB3B</color>
+
+    <color name="blue_leve">#BBDEFB</color>
+
+    <color name="blueAcercade">#1f8fca</color>
+
+
+
+
+
+
+</resources>

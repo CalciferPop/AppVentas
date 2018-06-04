@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hugopc.appventas.RegistroActivity"
+    android:background="#fcfcfc">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_height="300dp"
+        android:layout_width="match_parent"
+        android:theme="@style/AppTheme3"
+        >
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/colappsingtoolbar"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            app:layout_scrollFlags="exitUntilCollapsed|scroll"
+            app:contentScrim="?attr/colorAccent"
+            app:title="@string/Registro"
+            app:expandedTitleMarginStart="48dp"
+            app:expandedTitleMarginEnd="64dp"
+            android:background="@drawable/bacccmaterialblue">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbarid"
+                app:popupTheme="@style/Base.ThemeOverlay.AppCompat.Light"
+                app:layout_collapseMode="pin"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"/>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imgRegistro"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:src="@drawable/empleado2"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/dsnRegNombreEmp"
+                android:layout_below="@+id/imgRegistro"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                >
+                <EditText
+                    android:id="@+id/edtRegNombreEmpl"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Nombre Empleado"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/dsnRegApePatEmp"
+                android:layout_below="@+id/dsnRegNombreEmp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                >
+
+                <EditText
+                    android:id="@+id/edtRegApePatEmpl"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Apellido Paterno"
+                    android:inputType="text"
+                    android:textAlignment="center"
+
+                    />
+
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/dsnRegApeMatEmp"
+                android:layout_below="@+id/dsnRegApePatEmp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                >
+                <EditText
+                    android:id="@+id/edtRegApeMatEmpl"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Apellido Materno"
+                    android:inputType="text"
+                    android:textAlignment="center"
+
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/dsnRegFecNacEmpl"
+                android:layout_below="@+id/dsnRegApeMatEmp"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                >
+                <EditText
+                    android:id="@+id/edtRegFechaNacEmpl"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Obtener Fecha (2 click para obtener)"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/dsnRegEmailEmpl"
+                android:layout_below="@+id/dsnRegFecNacEmpl"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                >
+
+                <EditText
+                    android:id="@+id/edtRegEmailEmpl"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:textAlignment="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/edtRegFechaNacEmpl"
+                    android:layout_centerHorizontal="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/dsnRegTelefonoEmpl"
+                android:layout_below="@+id/dsnRegEmailEmpl"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                >
+                <EditText
+                    android:id="@+id/edtRegTelefonoEmpl"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Telefono"
+                    android:inputType="phone"
+                    android:textAlignment="center"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/dsnRegRFCEmpl"
+                android:layout_below="@+id/dsnRegTelefonoEmpl"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                >
+                <EditText
+                    android:id="@+id/edtRegRFCEmpl"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="RFC"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+            <RadioGroup
+                android:id="@+id/rgGenero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/dsnRegRFCEmpl"
+                android:padding="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                >
+                <RadioButton
+                    android:id="@+id/rb_Regmasculino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Masculino"
+                    android:paddingRight="10dp"
+                    android:layout_marginRight="10dp"
+
+                    />
+                <RadioButton
+                    android:id="@+id/rb_Regfemenino"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Femenino"
+
+                    />
+
+            </RadioGroup>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/dsnRegUsuariompl"
+                android:layout_below="@+id/rgGenero"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                >
+                <EditText
+                    android:id="@+id/edtRegusuario"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Usuario"
+                    android:inputType="text"
+                    android:textAlignment="center"
+                    />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/dsnRegPasswordmpl"
+                android:layout_below="@+id/dsnRegUsuariompl"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                >
+                <EditText
+                    android:id="@+id/edtRegpassword"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textAlignment="center"
+                    android:layout_marginTop="19dp"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btnRegistrar"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/dsnRegPasswordmpl"
+                android:layout_centerHorizontal="true"
+                android:theme="@style/MyButtonEmpleado"
+                android:text="Registrar"
+                />
+
+
+        </RelativeLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>
